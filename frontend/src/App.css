@@ -1,0 +1,145 @@
+/* Reset and basic box sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtitle {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  }
+  
+  .text-area {
+    width: 100%;
+    height: 150px;
+    padding: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Segoe UI', sans-serif; /* Important: prevents code font usage */
+    resize: vertical;
+    transition: border-color 0.3s;
+  }
+  
+  .input-area:focus {
+    outline: none;
+    border-color: #3498db;
+  }
+  
+  .output-area {
+    background-color: #f8f9fa;
+    border-color: #ecf0f1;
+    color: #2c3e50;
+  }
+  
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #34495e;
+  }
+  
+.controls-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+
+.toggle-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.level-select {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: white;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.level-select:focus {
+    outline: 2px solid #3498db;
+}
+  
+  .convert-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 32px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(52, 152, 219, 0.2);
+  }
+  
+  .convert-btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+  }
+  
+  .convert-btn:active {
+    transform: translateY(0);
+  }
+  
+  .convert-btn:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+  }
+  
+  .error-message {
+    background-color: #fee2e2;
+    color: #c0392b;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .output-area.loading {
+    opacity: 0.7;
+    font-style: italic;
+  }

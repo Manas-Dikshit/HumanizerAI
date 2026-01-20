@@ -1,0 +1,59 @@
+# Dependency directories
+node_modules/
+target/
+
+# Build outputs
+dist/
+build/
+out/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# IDE and Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.iml
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Java/Maven
+*.class
+*.jar
+*.war
+*.ear
+.settings/
+.classpath
+.project
+.mvn/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# React specific
+coverage/
+.next/
